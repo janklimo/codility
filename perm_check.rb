@@ -2,7 +2,7 @@ require 'minitest/autorun'
 
 class PermCheckTests < Minitest::Test
   def solution(a)
-    seen = {} # we could use sign switching as flag but this is easier and more readable
+    seen = {}
 
     a.each do |item|
       return 0 if item > a.size
