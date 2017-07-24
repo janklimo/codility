@@ -1,13 +1,13 @@
-def solution(n)
-  # convert to binary and remove leading and trailing zeros
-  binary = n.to_s(2).gsub(/^0*|0*\z/, "")
-  longest_gap = binary.split('1').sort_by { |gap| gap.length }.last
-  longest_gap ? longest_gap.length : 0
-end
-
 require 'minitest/autorun'
 
-class Tests < MiniTest::Test
+class BinaryGapTests < MiniTest::Test
+  def solution(n)
+    # convert to binary and remove leading and trailing zeros
+    binary = n.to_s(2).gsub(/^0*|0*\z/, "")
+    longest_gap = binary.split('1').sort_by { |gap| gap.length }.last
+    longest_gap ? longest_gap.length : 0
+  end
+
   def test_example_input
     assert_equal 9, solution(1025)
   end
