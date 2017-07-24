@@ -24,7 +24,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 1, min_avg_two_slice([4, 2, 2, 5, 1, 5, 8])
   end

@@ -14,7 +14,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 5, passing_cars([0, 1, 0, 1, 1])
   end

@@ -44,7 +44,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 2, equi_leader([4, 3, 4, 4, 4, 2])
   end

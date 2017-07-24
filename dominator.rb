@@ -23,16 +23,16 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example
     assert_equal 3, dominator([3, 4, 3, 2, 3, -1, 3, 3])
   end
 
   def test_empty
-    assert_equal -1, dominator([])
+    assert_equal(-1, dominator([]))
   end
 
   def test_no_major
-    assert_equal -1, dominator([1, 1, 2, 2, 3, 3])
+    assert_equal(-1, dominator([1, 1, 2, 2, 3, 3]))
   end
 end

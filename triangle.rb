@@ -11,7 +11,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 0, triangle([10, 50, 5, 1])
   end

@@ -7,7 +7,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 4, perm_missing_elm([2, 3, 1, 5])
   end

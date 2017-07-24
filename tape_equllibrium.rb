@@ -17,7 +17,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 1, tape_equllibrium([3, 1, 2, 4, 3])
   end

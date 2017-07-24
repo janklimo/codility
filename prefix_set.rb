@@ -15,7 +15,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 3, prefix_set([2, 2, 1, 0, 1])
   end

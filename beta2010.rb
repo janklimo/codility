@@ -24,7 +24,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 11, beta2010([1, 5, 2, 1, 4, 0])
   end

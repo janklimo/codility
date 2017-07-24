@@ -19,7 +19,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal [1, 1, 2, 4], genomic_range_query("GACACCATA", [0, 0, 4, 7], [8, 2, 5, 7])
   end

@@ -11,7 +11,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 6, solution(5, [1, 3, 1, 4, 2, 3, 5, 4])
   end

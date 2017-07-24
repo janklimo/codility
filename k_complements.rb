@@ -24,7 +24,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 6, k_complements([0, -1, 3, 2, -5, 7], 2)
   end

@@ -10,7 +10,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 60, max_product_of_tree([-3, 1, 2, -2, 5, 6])
   end

@@ -28,7 +28,7 @@ end
 
 require 'minitest/autorun'
 
-class Tests < MiniTest::Unit::TestCase
+class Tests < Minitest::Test
   def test_example_input
     assert_equal 2, solution([4, 3, 2, 1, 5], [0, 1, 0, 0, 0])
   end
