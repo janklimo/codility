@@ -2,18 +2,16 @@ require 'minitest/autorun'
 
 class TapeEqTests < Minitest::Test
   def solution(a)
-    sum = a.inject(:+)
     minimum = nil
-    p = 0
     sum_left = 0
-    sum_right = sum
-    begin
-      sum_left += a[p]
-      sum_right -= a[p]
+    sum_right = a.inject(:+)
+
+    (1..a.size-1).each do |i|
+      sum_left += a[i-1]
+      sum_right -= a[i-1]
       difference = (sum_left - sum_right).abs
       minimum = difference if !minimum || difference < minimum
-      p += 1
-    end while p + 1 < a.size
+    end
 
     minimum
   end

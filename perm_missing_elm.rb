@@ -4,7 +4,9 @@ class PermMissingElmTests < Minitest::Test
   def solution(a)
     n = a.size
     sum = a.inject(0, :+)
-    expected_sum = (2 + n) * (n + 1) / 2
+    # sum of all N natural numbers is n * (n + 1)/2
+    # our range is 1 .. (n + 1)
+    expected_sum = (n + 1) * (n + 2) / 2
     expected_sum - sum
   end
 

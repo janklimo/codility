@@ -2,7 +2,6 @@ require 'minitest/autorun'
 
 class FrogJumpTests < Minitest::Test
   def solution(x, y, d)
-    # should probably use integer arithmetics w/ modulo, but this is quick'n'dirty
     ((y - x) / d.to_f).ceil
   end
 
