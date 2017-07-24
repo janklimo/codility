@@ -1,4 +1,4 @@
-Ruby solutions to Codility tasks: https://codility.com/train/
+Ruby solutions to Codility tasks: https://codility.com/programmers/lessons
 
 Run all specs with
 
